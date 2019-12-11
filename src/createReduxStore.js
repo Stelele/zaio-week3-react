@@ -15,7 +15,7 @@ export default () => {
        compose(
         applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),// redux binding for firebase
         reduxFirestore(fbConfig),
-        //reactReduxFirebase(fbConfig) // redux bindings for firestore
+        //reactReduxFirebase() // redux bindings for firestore
        )
     ); 
 }
