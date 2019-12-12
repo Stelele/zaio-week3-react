@@ -60,4 +60,5 @@ const mapDispatchToProps = (dispatch) => {
     signIn: (creds) => dispatch(signIn(creds))
   }
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(SignIn)
